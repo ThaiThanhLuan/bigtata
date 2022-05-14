@@ -24,3 +24,24 @@ for line in sys.stdin:
 
 if last_key:
   print(f"{last_key}\t{max_val}\t{min_val}\t{round(sum/count)}")
+
+
+
+
+
+
+#!/usr/bin/python3
+"""reducer.py"""
+
+from operator import itemgetter
+import sys
+
+count=0
+i=1
+# lấy dữ liệu từ thiết bị nhập chuẩn
+for line in sys.stdin:
+ # loại bỏ ký tự trắng ở đầu và cuối chuỗi
+ word = line.strip()
+ count += i
+	
+print("Tong so chu trong du lieu la: %s" % count)
